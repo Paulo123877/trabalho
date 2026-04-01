@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundo Atômico: John Dalton</title>
+
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --accent: #27ae60;
+      --light: #ecf0f1;
+    }
+
+    body {
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      background-attachment: fixed;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      border-bottom: 5px solid var(--accent);
+      margin-bottom: 40px;
+    }
+
+    header h1 { margin: 0; font-size: 3rem; text-transform: uppercase; letter-spacing: 2px; }
+    header p { font-size: 1.2rem; opacity: 0.8; }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      margin-bottom: 30px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    }
+
+    /* Átomo Animado (Apenas CSS) */
+    .atom-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .sphere-3d {
+      width: 140px;
+      height: 140px;
+      background: radial-gradient(circle at 30% 30%, #555, #111, #000);
+      border-radius: 50%;
+      box-shadow: 0 30px 50px rgba(0,0,0,0.6);
+      animation: float 4s ease-in-out infinite;
+      margin-bottom: 20px;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .topic-list { list-style: none; padding: 0; }
+    .topic-list li { margin-bottom: 12px; padding-left: 30px; position: relative; }
+    .topic-list li::before { content: '✔'; position: absolute; left: 0; color: var(--accent); font-weight: bold; }
+
+    h2 { color: var(--primary); border-bottom: 2px solid var(--light); padding-bottom: 10px; }
+
+    footer {
+      background: rgba(0, 0, 0, 0.9);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .equipe-titulo { font-weight: bold; color: var(--accent); display: block; margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>John Dalton</h1>
+    <p>O Pai da Teoria Atômica Moderna</p>
+  </header>
+
+  <div class="container">
+    
+    <!-- Seção do Modelo -->
+    <div class="card">
+      <div class="row">
+        <div style="flex: 1; min-width: 280px;">
+          <h2>Modelo da Bola de Bilhar</h2>
+          <ul class="topic-list">
+            <li><strong>Maciço e Esférico:</strong> Sem espaços vazios.</li>
+            <li><strong>Indivisível:</strong> Não pode ser criado ou destruído.</li>
+            <li><strong>Igualdade:</strong> Átomos de um mesmo elemento são idênticos.</li>
+          </ul>
+        </div>
+        <div class="atom-box">
+          <div class="sphere-3d"></div>
+          <span style="font-size: 0.8rem; color: #888;">Representação do Átomo</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção Biográfica Sem Imagem -->
+    <div class="card">
+      <h2>Quem foi John Dalton?</h2>
+      <p>Cientista britânico que transformou a química em uma ciência exata. Ele foi o primeiro a descrever o <strong>Daltonismo</strong> e propôs que a matéria é formada por combinações de átomos em proporções fixas.</p>
+      <p>Seus estudos sobre gases e meteorologia foram fundamentais para a criação da sua famosa teoria atômica, apresentada no início do século XIX. Dalton acreditava que o átomo era a menor unidade da matéria, comparando-o a uma esfera sólida e indestrutível.</p>
+    </div>
+
+    <!-- Postulados -->
+    <div class="card">
+      <h2>Os Postulados de Dalton</h2>
+      <ol style="line-height: 2;">
+        <li>Toda matéria é composta por átomos.</li>
+        <li>Átomos de elementos diferentes têm massas e propriedades diferentes.</li>
+        <li>Compostos químicos são formados pela união de átomos em proporções fixas.</li>
+        <li>Reações químicas envolvem apenas o rearranjo de átomos.</li>
+      </ol>
+    </div>
+
+  </div>
+
+  <footer>
+    <span class="equipe-titulo">Trabalho realizado por:</span>
+    <div>ARTHUR • AMANDA • DAVI • MARIA • PAULO</div>
+    <p style="font-size: 0.8rem; margin-top: 15px; opacity: 0.6;"></p>
+  </footer>
+
+</body>
+</html>
